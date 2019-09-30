@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>esteelauder</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/esteelauder.css">
+    <link rel="stylesheet" href="css/esteelauder-mo.css" media="(max-width:767px)">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.toast.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/esteelauder.js"></script>
+</head>
+<body>    
+    <aside id="top-banner">        
+        <a href="#">공식몰 쇼핑혜택</a>
+        <button class="icon icon-close-wh">
+            <span class="blind">닫기</span>
+        </button>     
+    </aside>
+    <header> 
+        <div class="sub-right">
+            <button class="icon icon-login">
+                <span class="blind">로그인</span>
+            </button>  
+            <button class="icon icon-cart">
+                <span class="blind">장바구니</span>
+            </button>  
+            <button class="icon icon-search">
+                <span class="blind">검색</span>
+            </button>            
+        </div>
+        <div class="sub-left">
+            <div class="lang-select">
+               <button><span>한국어</span> <i class="icon icon-drop"></i></button>
+                <ul class="dropdown">
+                    <li><a href="#" class="active">한국어</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">日本語</a></li>
+                    <li><a href="#">中文</a></li>
+                    <li><a href="#">Deutsch</a></li>
+                    <li><a href="#">Français</a></li>
+                    <li><a href="#">Türkçe</a></li>
+                </ul>
+            </div>
+
+            <a href="#" class="btn-store"><i class="icon icon-store"></i><span>매장찾기</span></a>
+        </div>
+        
+        <nav>
+            <!-- 메뉴버튼 -->
+            <button id="btn-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h1><a href="#" class="icon icon-logo"><span class="blind">Estee lauder</span></a></h1>
+            <ul class="gnb1">
+                <li>
+                    <a href="#">
+                        <span class="en">NEW</span> 
+                        <span class="ko">신제품</span>
+                    </a>
+                </li>                
+                <li>
+                    <a href="#">
+                        <span class="en">BEST SELLER</span>
+                        <span class="ko">베스트셀러</span>
+                    </a>
+                </li>                
+                <li>
+                    <a href="#">
+                        <span class="en">SKINCARE</span>
+                        <span class="ko">스킨케어</span>
+                        <i class="icon icon-arrow"></i>
+                    </a>
+                    <div class="gnb2">
+                        <button class="icon icon-arrow-back"></button>   
+                        <ul>
+                            <li><a href="#">
+                                <span class="en">All</span>
+                                <span class="ko">스킨케어 전체보기</span>
+                            </a></li>
+                            <li><a href="#">
+                                <span class="en">Cleaser</span>
+                                <span class="ko">클렌저</span>
+                            </a></li>
+                            <li><a href="#">
+                                <span class="en">Toner & Lotion</span>
+                                <span class="ko">스킨 & 로션</span>
+                            </a></li>
+                            <li><a href="#">
+                                <span class="en">Serum</span>
+                                <span class="ko">세럼</span> 
+                            </a></li>
+                            <li><a href="#">
+                                <span class="en">Cream</span>
+                                <span class="ko">크림</span>
+                            </a></li>
+                            <li><a href="#">
+                                    <span class="en">Oil</span>
+                                    <span class="ko">오일</span>
+                                </a></li>
+                            <li><a href="#">
+                                <span class="en">Special Care & Masks</span>
+                                <span class="ko">스페셜 케어 & 마스크</span>
+                            </a></li>
+                            <li><a href="#">
+                                <span class="en">Eye Care</span>
+                                <span class="ko">아이 케어</span>
+                            </a></li>
+                            <li><a href="#">
+                                <span class="en">Sun Care</span>
+                                <span class="ko">썬 케어</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="en">MAKEUP</span>
+                        <span class="ko">메이크업</span>
+                        <i class="icon icon-arrow"></i>
+                    </a>
+                    <div class="gnb2">
+                        <button class="icon icon-arrow-back"></button>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="en">All</span>
+                                    <span class="ko">메이크업 전체보기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="en">FACE</span>
+                                    <span class="ko">페이스 메이크업</span>
+                                    <i class="icon icon-arrow"></i>
+                                </a>
+                                <div class="gnb3">
+                                    <button class="icon icon-arrow-back"></button>
+                                    <ul>
+                                        <li><a href="#">
+                                            <span class="en">All</span>
+                                            <span class="ko">페이스 메이크업 전체보기</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">Primer</span>
+                                            <span class="ko">프라이머</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">Foundation</span>
+                                            <span class="ko">파운데이션</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">BB</span>
+                                            <span class="ko">비비</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">Concealer</span>
+                                            <span class="ko">컨실러</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">Powder</span>
+                                            <span class="ko">파우더</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">Cushion</span>
+                                            <span class="ko">쿠션</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">Blusher</span>
+                                            <span class="ko">블러셔</span>
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="en">EYES</span>
+                                    <span class="ko">아이 메이크업</span>
+                                    <i class="icon icon-arrow"></i>
+                                </a>
+                                <div class="gnb3">
+                                    <button class="icon icon-arrow-back"></button>
+                                    <ul>
+                                        <li><a href="#">
+                                            <span class="en">All</span>
+                                            <span class="ko">아이 메이크업 전체보기</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">Eyebrow</span>
+                                            <span class="ko">아이브로우</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">Eyeshadow</span>
+                                            <span class="ko">아이섀도우</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">Eyeliner</span>
+                                            <span class="ko">아이라이너</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">Mascara</span>
+                                            <span class="ko">마스카라</span>
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="en">LIP</span>
+                                    <span class="ko">립 메이크업</span>
+                                    <i class="icon icon-arrow"></i>
+                                </a>
+                                <div class="gnb3">
+                                    <button class="icon icon-arrow-back"></button>
+                                    <ul>
+                                        <li><a href="#">
+                                            <span class="en">All</span>
+                                            <span class="ko">립 메이크업 전체보기</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">stick</span>
+                                            <span class="ko">스틱</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">gloss</span>
+                                            <span class="ko">글로스</span>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <span class="en">liquid</span>
+                                            <span class="ko">리퀴드</span>
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">
+                                <span class="en">Accessories</span>
+                                <span class="ko">악세사리</span>
+                                </a></li>
+                            <li><a href="#">
+                                <span class="en">Collection</span>
+                                <span class="ko">컬렉션</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="en">FRAGRANCE</span>
+                        <span class="ko">향수</span>
+                        <i class="icon icon-arrow"></i>
+                    </a>
+                    <div class="gnb2">
+                        <button class="icon icon-arrow-back"></button>
+                        <ul>
+                            <li><a href="#">
+                                <span class="en">All</span>
+                                <span class="ko">향수 전체보기</span>
+                            </a></li>
+                            <li><a href="#">
+                                <span class="en">Woman</span>
+                                <span class="ko">여성용</span>
+                            </a></li>
+                            <li><a href="#">
+                                <span class="en">Man</span>
+                                <span class="ko">남성용</span>
+                            </a></li>
+                        </ul>
+                    </div> 
+                </li>
+                <li><a href="#" class="icon icon-esteestories"><span class="blind">ESTEE STORIES</span></a></li>
+            </ul>
+
+            <!-- 모바일용 로그인 매장찾기 -->
+            <div class="bottom-area">
+                <a href="#">로그인</a>
+                <a href="#"><i class="icon icon-store"></i>매장찾기</a>
+            </div>
+        </nav>
+    </header>
+      
+    <!-- 컨텐츠 시작 -->
+    <section>
+        
+        <!-- Swiper -->
+        <article class="page1">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/slide1.jpg" alt="" class="p">
+                        <!-- <img src="img/slide1_m.jpg" alt="" class="m"> -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide5.jpg" alt="" class="p">
+                        <!-- <img src="img/slide2_m.jpg" alt="" class="m"> -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide3.jpg" alt="" class="p">
+                        <!-- <img src="img/slide3_m.jpg" alt="" class="m"> -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide6.jpg" alt="" class="p">
+                        <!-- <img src="img/slide4_m.jpg" alt="" class="m"> -->
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>  
+            </div>
+            <i class="icon icon-down"></i>
+        </article> 
+
+        <article class="page2">
+            <h2>뷰티추천제품</h2>
+            <div class="tab-menu">
+                <ul>
+                    <li><a href="#new" class="active">신제품</a></li>
+                    <li><a href="#best">베스트셀러</a></li>
+                </ul>                
+            </div>
+
+            <!-- swiper 플러그인 -->
+            <div class="product">
+                <div class="content swiper1" id="new">
+                    <div class="swiper-container outer">
+                        <ul class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <li data-key="new1" >
+                                    <div class="img-box">
+                                        <img src="img/new1.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <dl>
+                                            <dt>퓨어 컬러 엔비 스컬프팅 블러쉬 + 하이라이터 듀오</dt>
+                                            <dd>양 볼에 생기를 더하고 얼굴 윤곽을 살려주는 생생한 컬러감의 퓨어 칼라 엔비 블러쉬 듀오</dd>
+                                        </dl>
+                                        <div class="option"> 
+                                            <!-- swiper 플러그인 -->
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper blusher">
+                                                    <li class="swiper-slide"><a href="#" class="color1"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color2"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color3"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color4"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group2">
+                                                <div class="swiper-button-prev"><button class="icon icon-prev2"></button></div>
+                                                <div class="swiper-button-next"><button class="icon icon-next2"></button></div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide"><a href="#">신풀 피치</a><strong>56,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">핑크 세덕션</a><strong>56,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">코랄 피비</a><strong>56,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">로즈 익스포즈드</a><strong>56,000</strong></li>
+                                                </ul>
+                                            </div>
+                                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li data-key="new2">
+                                    <div class="img-box">
+                                        <img src="img/new2.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <dl>
+                                            <dt>퓨어 컬러 엔비 스무딩 슈가 스크럽</dt>
+                                            <dd>입술의 각질을 케어하고 정돈해주어 매끄럽게 가꾸어주는 입술 전용 스크럽</dd>
+                                        </dl>
+                                        <div class="info">
+                                            <strong>40,000</strong>
+                                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li data-key="new3">
+                                    <div class="img-box">
+                                        <img src="img/new3.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <dl>
+                                            <dt>퓨어 컬러 엔비 립 볼류마이저</dt>
+                                            <dd>입술을 부드럽고 촉촉하게 케어하면서 오랜 시간 유지되는 볼륨감까지 선사하는 립 글로스</dd>
+                                        </dl>
+                                        <div class="info">
+                                            <strong>40,000</strong>
+                                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li data-key="new4">
+                                    <div class="img-box">
+                                        <img src="img/new4.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <dl>
+                                            <dt>퓨어 컬러 엔비 컬러 리플레니시 립 밤</dt>
+                                            <dd>생기있는 부드러운 핑크 빛 입술로 가꿔주는 립밤</dd>
+                                        </dl>
+                                        <div class="option"> 
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper bam">
+                                                    <li class="swiper-slide"><a href="#"class="color1"></a></li>
+                                                    <li class="swiper-slide"><a href="#"class="color2"></a></li>
+                                                    <li class="swiper-slide"><a href="#"class="color3"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group2">
+                                                <div class="swiper-button-prev"><button class="icon icon-prev2"></button></div>
+                                                <div class="swiper-button-next"><button class="icon icon-next2"></button></div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide"><a href="#">울트라 핑크</a><strong>40,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">라즈베리</a><strong>40,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">코랄</a><strong>40,000</strong></li>
+                                                </ul>
+                                            </div>
+                                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li data-key="new5">
+                                    <div class="img-box">
+                                        <img src="img/new5.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <dl>
+                                            <dt>뉴트리셔스 액티브-트레멜라 하이드라 포티파잉 수플레 크림</dt>
+                                            <dd>워터리한 텍스처로 바르는 즉시 물방울로 변하여 피부에 72시간동안 수분을 공급해주는 크림</dd>
+                                        </dl>
+                                        <div class="info">
+                                            <strong>63,000</strong>
+                                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li data-key="new6">
+                                    <div class="img-box">
+                                        <img src="img/new6.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <dl>
+                                            <dt>퍼펙셔니스트 프로 멀티 디펜스 아쿠아 UV 젤 SPF50/PA++++</dt>
+                                            <dd>공기처럼 가벼운 3중 보호막으로 피부를 지켜주는 UV 젤</dd>
+                                        </dl>
+                                        <div class="info">
+                                            <strong>58,000</strong>
+                                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="btn-group-cart">
+                        <div class="swiper-button-next"><button class="icon icon-next"></button></div>
+                        <div class="swiper-button-prev"><button class="icon icon-prev"></button></div>
+                    </div>
+                </div>
+                <div id="best" class="content swiper2">
+                    <div class="swiper-container outer">
+                        <ul class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <li data-key="best1" class="toggle">
+                                    <div class="img-box">
+                                        <img src="img/best1.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <dl>
+                                            <dt>6세대 갈색병 리페어 에센스</dt>
+                                            <dd>외부 손상과 조기 노화로부터 피부를 보호하는 에스티로더의 NO.1 리페어 세럼</dd>
+                                        </dl>
+                                        <div class="option"> 
+                                            <!-- swiper 플러그인 -->
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide"><a href="#">30ml</a></li>
+                                                    <li class="swiper-slide"><a href="#">50ml</a></li>
+                                                    <li class="swiper-slide"><a href="#">75ml</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group2">
+                                                <div class="swiper-button-prev"><button class="icon icon-prev2"></button></div>
+                                                <div class="swiper-button-next"><button class="icon icon-next2"></button></div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide"><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><strong>155,000</strong></li>
+                                                    <li class="swiper-slide"><strong>189,000</strong></li>
+                                                </ul>
+                                            </div>
+                                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li data-key="best2">
+                                    <div class="img-box">
+                                        <img src="img/best2.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <dl>
+                                            <dt>더블웨어 스테이-인-플레이스 메이크업 SPF10/PA++</dt>
+                                            <dd>결점없이 완벽한 피부를 연출해주는 에스티로더의 베스트셀러 파운데이션</dd>
+                                        </dl>
+                                        <div class="option"> 
+                                            <!-- swiper 플러그인 -->
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper face">
+                                                    <li class="swiper-slide"><a href="#"class="color1"></a></li>
+                                                    <li class="swiper-slide"><a href="#"class="color2"></a></li>
+                                                    <li class="swiper-slide"><a href="#"class="color3"></a></li>
+                                                    <li class="swiper-slide"><a href="#"class="color4"></a></li>
+                                                    <li class="swiper-slide"><a href="#"class="color5"></a></li>
+                                                    <li class="swiper-slide"><a href="#"class="color6"></a></li>
+                                                    <li class="swiper-slide"><a href="#"class="color7"></a></li>
+                                                    <li class="swiper-slide"><a href="#"class="color8"></a></li>
+                                                    <li class="swiper-slide"><a href="#"class="color9"></a></li>
+                                                    <li class="swiper-slide"><a href="#"class="color10"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group2">
+                                                <div class="swiper-button-prev"><button class="icon icon-prev2"></button></div>
+                                                <div class="swiper-button-next"><button class="icon icon-next2"></button></div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide"><a href="#">1N0 포슬린</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1C0 쉘 (NEW)</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1W0 웜 포슬린 (NEW)</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1C1 쿨본</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1N1 아이보리 누드</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1W0 본</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1C2 페탈</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1N2 에크루 (NEW)</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1W2 샌드</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">2C0 쿨 바닐라</a><strong>69,000</strong></li>
+                                                </ul>
+                                            </div>
+                                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li data-key="best3">
+                                    <div class="img-box">
+                                        <img src="img/best3.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <dl>
+                                            <dt>퓨어 컬러 러브 립스틱</dt>
+                                            <dd>단 한번의 터치로 완벽한 컬러 밀착</dd>
+                                        </dl>
+                                        <div class="option"> 
+                                            <!-- swiper 플러그인 -->
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper lip">
+                                                    <li class="swiper-slide"><a href="#" class="color1"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color2"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color3"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color4"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color5"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color6"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color7"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color8"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color9"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color10"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group2">
+                                                <div class="swiper-button-prev"><button class="icon icon-prev2"></button></div>
+                                                <div class="swiper-button-next"><button class="icon icon-next2"></button></div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide"><a href="#">301 바 레드-울트라 매트</a><strong>31,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">202 쇼크-울트라 매트</a><strong>31,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">300 핫 스트릭-울트라 매트</a><strong>31,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">360 플래시 칠-쉬머펄</a><strong>31,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">303 와일드 포피-엣지 크림</a><strong>31,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">340 핫 루머-엣지 크림</a><strong>31,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">350 슬라이 윙크- 쉬머 펄</a><strong>31,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">110 로우 슈거-울트라 매트</a><strong>31,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">120 로즈 엑세스-울트라 매트</a><strong>31,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">480 노바 노아-쿨 크롬</a><strong>31,000</strong></li>
+                                                </ul>
+                                            </div>
+                                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li data-key="best4">
+                                    <div class="img-box">
+                                        <img src="img/best4.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <dl>
+                                            <dt>퓨처리스트 아쿠아 브릴리언스 리퀴드 메이크업 SPF20/PA+++</dt>
+                                            <dd>결점없이 촉촉한 광채로 빛나는 피부 표현 퓨처리스트 파운데이션</dd>
+                                        </dl>
+                                        <div class="option"> 
+                                            <!-- swiper 플러그인 -->
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper face">
+                                                    <li class="swiper-slide"><a href="#" class="color1"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color2"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color3"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color4"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color5"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color6"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color7"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color8"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color9"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color10"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group2">
+                                                <div class="swiper-button-prev"><button class="icon icon-prev2"></button></div>
+                                                <div class="swiper-button-next"><button class="icon icon-next2"></button></div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide"><a href="#">1N0 포슬린</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1C0 쉘 (NEW)</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1W0 웜 포슬린 (NEW)</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1C1 쿨본</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1N1 아이보리 누드</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1W0 본</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1C2 페탈</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1N2 에크루 (NEW)</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">1W2 샌드</a><strong>69,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">2C0 쿨 바닐라</a><strong>69,000</strong></li>
+                                                </ul>
+                                            </div>
+                                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                                        </div>                                        
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li data-key="best5">
+                                    <div class="img-box">
+                                        <img src="img/best5.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <dl>
+                                            <dt>퓨어 컬러 엔비 페인트-온 리퀴드 립</dt>
+                                            <dd>페인트처럼 강렬한 발색, 8시간 롱웨어</dd>
+                                        </dl>
+                                        <div class="option"> 
+                                            <!-- swiper 플러그인 -->
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper lip">
+                                                    <li class="swiper-slide"><a href="#" class="color1" data-name="301 바 레드-울트라 매트" data-price="41000"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color2" data-name="202 쇼크-울트라 매트" data-price="41000"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color3" data-name="300 핫 스트릭-울트라 매트" data-price="41000"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color4" data-name="360 플래시 칠-쉬머펄" data-price="41000"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color5" data-name="303 와일드 포피-엣지 크림" data-price="41000"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color6" data-name="340 핫 루머-엣지 크림" data-price="41000"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color7" data-name="350 슬라이 윙크- 쉬머 펄" data-price="41000"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color8" data-name="110 로우 슈거-울트라 매트" data-price="41000"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color9" data-name="120 로즈 엑세스-울트라 매트" data-price="41000"></a></li>
+                                                    <li class="swiper-slide"><a href="#" class="color10" data-name="480 노바 노아-쿨 크롬" data-price="41000"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group2">
+                                                <div class="swiper-button-prev"><button class="icon icon-prev2"></button></div>
+                                                <div class="swiper-button-next"><button class="icon icon-next2"></button></div>
+                                            </div>
+                                            <div class="info"></div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide"><a href="#">301 바 레드-울트라 매트</a><strong>41,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">202 쇼크-울트라 매트</a><strong>41,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">300 핫 스트릭-울트라 매트</a><strong>41,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">360 플래시 칠-쉬머펄</a><strong>41,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">303 와일드 포피-엣지 크림</a><strong>41,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">340 핫 루머-엣지 크림</a><strong>41,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">350 슬라이 윙크- 쉬머 펄</a><strong>41,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">110 로우 슈거-울트라 매트</a><strong>41,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">120 로즈 엑세스-울트라 매트</a><strong>41,000</strong></li>
+                                                    <li class="swiper-slide"><a href="#">480 노바 노아-쿨 크롬</a><strong>41,000</strong></li>
+                                                </ul>
+                                            </div>
+                                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                                        </div>                                    
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li data-key="best6">
+                                    <div class="img-box">
+                                        <img src="img/best6.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <dl>
+                                            <dt>크레센트 화이트 풀 사이클 브라이트닝 UV 프로텍터 SPF 50/PA++++</dt>
+                                            <dd>자외선 차단은 물론, 항산화 효과와 주름을 개선하는 스킨케어 효과까지 갖춘 가볍고 부드러운 자외선 차단제</dd>
+                                        </dl>
+                                        <div class="info">
+                                            <strong>62,000</strong>
+                                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                                        </div>                                        
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="btn-group-cart">
+                        <div class="swiper-button-next"><button class="icon icon-next"></button></div>
+                        <div class="swiper-button-prev"><button class="icon icon-prev"></button></div>
+                    </div>  
+                </div>
+            </div>  
+            <button class="icon icon-plus">
+                <span class="blind">더보기</span>
+            </button>
+        </article>
+
+        <article class="page3">
+            <div class="video">
+                <h2 class="icon icon-video-title"><span class="blind">촉촉하게....</span></h2>
+               <video id="video" controls autoplay muted src="img/esteelauder.mp4"></video>                
+            </div>
+            <div class="card">     
+                <div class="text"> 
+                    <b>BABY YOUR LIPS.</b><br>
+                    <strong>PURE COLOR ENVY</strong>
+                    <p>New Lip Care Collection</p>
+                    <p class="line">신제품 퓨어컬러 립케어 에디션</p>
+                </div> 
+                <button type="button" class="card-button">컬렉션 자세히 보기</button>
+            </div>
+        </article>
+
+        <article class="page4">            
+            <div class="insta">
+                <div class="wrap">
+                    <div class="text">
+                        <p>포스팅을 확인해 보세요!</p>
+                        <p>#esteestories</p>
+                    </div>
+                    <ul class="insta-image">
+                        <li><img src="img/insta1.jpg" alt="에어린 메디터래니언 허니써클 EDP"></li>
+                        <li><img src="img/insta2.jpg" alt="퓨어 컬러 엔비 페인트-온 리퀴드 립"></li>
+                        <li><img src="img/insta3.jpg" alt="NEW 퓨어 컬러 엔비 립 리페어 포션"></li>
+                        <li><img src="img/insta4.jpg" alt="6세대 갈색병 리페어 에센스"></li>
+                        <li><img src="img/insta5.jpg" alt="에어린 에게블러썸 EDP"></li>
+                        <li><img src="img/insta6.jpg" alt="퓨어 컬러 엔비 벨벳 매트 립스틱"></li>
+                        <li><img src="img/insta7.jpg" alt="어드밴스드 나이트 리페어 아이 컨센트레이트"></li>
+                        <li><img src="img/insta8.jpg" alt="퓨어 컬러 엔비 벨벳 쉬머 립스틱 NEW컬러"></li>
+                        <li><img src="img/insta1.jpg" alt="에어린 메디터래니언 허니써클 EDP"></li>
+                        <li><img src="img/insta2.jpg" alt="퓨어 컬러 엔비 페인트-온 리퀴드 립"></li>
+                        <li><img src="img/insta3.jpg" alt="NEW 퓨어 컬러 엔비 립 리페어 포션"></li>
+                        <li><img src="img/insta4.jpg" alt="6세대 갈색병 리페어 에센스"></li>
+                        <li><img src="img/insta5.jpg" alt="에어린 에게블러썸 EDP"></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="page4-popup">
+                <div class="title">
+                    <strong>에어린 메디터래니언 허니써클 EDP</strong>
+                </div>
+                <img src="img/insta1.jpg" alt="에어린 메디터래니언 허니써클 EDP">
+            </div>
+            <div class="news-letter">
+                <button class="icon icon-close">
+                    <span class="blind">닫기</span>
+                </button>
+                <strong>뉴스레터에 가입하세요</strong>
+                <form action="#">
+                    <input type="text" id="email" title="이메일입력" placeholder="여기에 이메일을 입력하세요">
+                    <button type="submit" class="news-letter-button">구독하기</button>
+                </form>
+            </div>
+        </article>
+    </section>
+    
+    <footer>        
+        <div class="center">
+            
+            <ul class="etc">
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+            </ul>    
+            <ul class="sns">    
+                <li><a href="#" class="icon icon-twitter"></a></li>
+                <li><a href="#" class="icon icon-youtube"></a></li>
+                <li><a href="#" class="icon icon-facebook"></a></li>
+                <li><a href="#" class="icon icon-instagram"></a></li>
+            </ul>
+
+            <i class="icon icon-footer"><span class="blind">정품인증</span></i>
+            
+
+            <div class="box-left">
+                <span class=""><span class="blind"></span></span>
+                <dl>
+                    <dt>고객 케어 센터 (Customer care center)</dt>
+                    <dd>구매/배송/제품 문의 02-3440-2522</dd>
+                    <dd>상담시간 : 월~금 9:00~18:00(토/일/공휴일 휴무)</dd>
+                    <dd>점심시간 : 12:00~13:00</dd>
+                </dl>
+                
+            </div>
+            <div class="box-right">
+                <span class=""><span class="blind"></span></span>
+                <dl>
+                    <dd>이엘씨에이한국(유) 대표 SLAVIN PAUL</dd>
+                    <dd>서울시 강남구 강남대로 382(역삼동) 메리츠타워 9층, 06232</dd>
+                    <dd>사업자등록번호 : 211-81-71889</dd>
+                    <dd>호스팅서비스 사업자: (주)엘지유플러스</dd>
+                    <dd>통신판매업신고 : 강남15737호</dd>
+                </dl>               
+            </div>
+            <small>© Estee lauder Inc</small>
+        </div>
+    </footer>
+
+    <!-- 로그인 팝업 -->
+    <div class="popup-login">
+        <button class="icon icon-close">
+            <span class="blind">닫기</span>
+        </button>
+        <section class="login">
+            <form action="#">
+                <div class="row">
+                    <input type="text" id="id" title="아이디" placeholder="아이디">
+                </div>
+                <div class="row">
+                    <input type="text" id="password" title="비밀번호" placeholder="비밀번호">
+                </div>
+                <label><input type="checkbox" name="login">내 정보 기억하기</label>                
+                <button type="submit" class="login-btn">로그인</button>
+            </form>
+            <p></p>
+            <div class="login-btn-group">                
+                <button type="button">회원가입</button>
+                <button type="button">계정찾기</button>
+            </div>            
+        </section>
+    </div>
+
+    <!-- 장바구니 팝업 -->
+    <div class="popup-cart">
+        <div class="top">
+            <label><input type="checkbox" name="shopping">
+                <!-- <i class="icon icon-check"></i> -->
+                전체선택</label>
+            <button class="icon icon-close"><span class="blind">닫기</span></button>
+        </div>
+        
+        <!-- <a href="#shopping"><span class=blind>장바구니</span></a> -->
+        <div id="shopping" class="cart-list">
+            <ul>
+                    <!-- <li data-key="new6">
+                        <label><input type="checkbox"><i class="icon icon-check"></label>
+                        <div class="img-box">
+                            <img src="img/new6.jpg" alt="">
+                        </div>
+                        <div class="text-box">
+                            <dl>
+                                <dt>퍼펙셔니스트 프로 멀티 디펜스 아쿠아 UV 젤 SPF50/PA++++</dt>
+                                <dd>공기처럼 가벼운 3중 보호막으로 피부를 지켜주는 UV 젤</dd>
+                            </dl>
+                            <strong>58,000</strong>
+                            <button class="icon icon-cart2"><span class="blind">장바구니</span></button>
+                        </div>
+                    </li> -->
+            </ul>
+            <div class="bottom">
+                <!-- <p>61,000원 더 구매하시고 5종키트 받아가세요!</p> -->
+                <div class="total">
+                    <span class="count">0개</span>
+                    <span class="price">0</span>
+                </div>
+                <div class="btn-group-cart">
+                    <button class="btn-del">상품삭제</button>
+                    <button class="btn-order">상품결제</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 검색팝업 -->
+    <div class="popup-search">
+        <button class="icon icon-close">
+            <span class="blind">닫기</span>
+        </button>
+        <div>
+            <form action="#">
+                <input type="text" id="search2">
+                <button type="submit" class="icon icon-search"></button>
+            </form>
+            <strong>인기검색어</strong>
+            <ul>
+                <li><a href="#">갈색병</a></li>
+                <li><a href="#">퓨어컬러</a></li>
+                <li><a href="#">더블웨어</a></li>
+                <li><a href="#">파운데이션</a></li>
+                <li><a href="#">기프트 세트</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!-- 쇼핑혜택 팝업 -->
+    <div class="popup-gift">
+        <button class="icon icon-close">
+            <span class="blind">닫기</span>
+        </button>
+        <h2>공식몰 쇼핑 혜택</h2>
+        <ol>
+            <li>1. 50,000원 이상 첫 구매시 15% 할인<small>*소모품 제외</small></li>
+            <li>2. 전상품 무료배송 & 5% 할인</li>
+            <li>3. 구매 금액별 사은품 증정</li>
+        </ol>
+        <a href="#"><button type="button">혜택 자세히 보기</button></a>
+    </div>
+
+    <!-- 위로가기 -->
+    <div class="go-top">
+        <a href="#" class="icon icon-go-top"><span class="blind">위로가기</span></a>
+    </div>
+</body>
+</html>
